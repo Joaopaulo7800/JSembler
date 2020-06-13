@@ -12,6 +12,7 @@ import static org.junit.Assert.*;
 
 public class OpcodeTest {
 
+	// Testando o retorno dos valores em Opcode para String
 	@Test
 	public void OpcodeTest(){
 		assertEquals("001101", Opcode.opcode("ori"));
@@ -22,7 +23,7 @@ public class OpcodeTest {
 		assertEquals("000000", Opcode.opcode("xor"));
 		assertEquals("100011", Opcode.opcode("lw"));
 		assertEquals("101011", Opcode.opcode("sw"));
-     	assertEquals("000100", Opcode.opcode("beq"));
+     		assertEquals("000100", Opcode.opcode("beq"));
 		assertEquals("000101", Opcode.opcode("bne"));
 		assertEquals("000010", Opcode.opcode("j"));
 		assertEquals("000000", Opcode.opcode("sub"));
